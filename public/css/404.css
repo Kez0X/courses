@@ -1,0 +1,110 @@
+body{
+    background-image : url("../assets/3418448.jpg");
+}
+
+p{
+  font-size : 1rem;
+  color : white;
+}
+
+a{
+  text-decoration : none;
+  color : white;
+}
+
+.container{
+    margin : auto;
+    text-align: center;
+}
+
+.container .card{
+    border : 6px solid white;
+    background-color :rgb(1, 21, 39);
+    text-align : center;
+    padding : 50px 30px;
+}
+
+.container .card .title h1{
+    font-size: 3rem;
+    color : white;
+}
+
+.container .card .desc p{
+    font-size: 1.5rem;
+    color : white;
+}
+
+.container .card .back a{
+    font-size : 1rem;
+    text-decoration: none;
+    padding : 10px 2px;
+    border : 2px solid white;
+    background-color: yellow;
+}
+
+.back {
+    text-align: center;
+    margin : auto;
+}
+
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

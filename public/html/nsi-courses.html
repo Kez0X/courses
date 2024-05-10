@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset = "UTF-8"/>
+        <link rel="stylesheet" href="../css/nsi-courses.css"/>
+        <meta name ="Remise à niveau"/>
+        <meta name="keywords" content="Remise à niveau, collège, college, lycée, cours, aide, école, maths, informatique"/>
+        <meta name="description" content="Centre de remise à niveau en informatique et en maths"/>
+        <title>Cours Particulier - Informatique</title>
+        <link rel="icon" type="image/gif" href="../assets/livre.png" />
+        <!-- https://www.flaticon.com/fr/icone-gratuite/livre_1245333?term=book&related_id=1245333 -->
+    </head>
+    <body>
+        <a href="https://front.codes/" class="logo" target="_blank">
+            <img src="../assets/Python_logo_01.svg" alt="">
+        </a>
+    
+          <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+          <label for="menu-icon"></label>
+          <nav class="nav"> 		
+              <ul class="pt-5">
+                  <li><a href="/courses">Leçons</a></li>
+                  <li><a href="https://ens-fr.gitlab.io/nsi-pratique/N1">Exercices Pratiques</a></li>
+                  <li><a href="https://www.superprof.fr/diplome-baccalaureat-general-actuel-etudiant-deuxieme-annee-faculte-informatique-lyon-enseigne-nsi.html">Cours Particuliers</a></li>
+                  <li><a href="/">Changer de matière</a></li>
+              </ul>
+          </nav>
+          <div class="section-center">
+                <h1 class="mb-0">INFORMATIQUE</h1>
+                <script src="../js/functionScrolling.js"></script>
+                <section class="scrolling">
+                    <h1>Scroll vers le bas &#8595;</h1>
+                </section>
+
+                <section>
+                    <div class="container reveal">
+                        <h2 class="mb-1" id="Leçons">Leçons</h2>
+                        <div class="text-container">
+
+                            <div class="text-box">
+                            <h3 class="LinkCours"><a href="leçons/fonctions.html">Fonctions</a></h3>
+                            <p>Nous verrons à quoi servent les fonctions et comment s'en servir correctement.</p>
+                            </div>
+
+                            <div class="text-box">
+                            <h3 class="LinkCours"><a href="leçons/listes.html">Listes</a></h3>
+                            <p>Nous étudierons en détail quel est ce type de structure de données et comment s'en servir.</p>
+                            </div>
+
+                            <div class="text-box">
+                            <h3 class="LinkCours"><a href="leçons/dictionnaires.html">Dictionnaires</a></h3>
+                            <p>Qu'est ce que les dictionnaires et comment s'en servir ?</p>
+                            </div>
+
+                        </div>
+                        <div class="text-container">
+
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="leçons/piles.html">Piles</a></h3>
+                                <p>Les piles qui suivent le principe de LIFO (Last In First Out).</p>
+                                </div>
+                            
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="leçons/files.html">Files</a></h3>
+                                <p>Les files qui suivent le principe de FIFO (First In First Out).</p>
+                                </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="leçons/arbres.html">Arbres</a></h3>
+                                <p>A quoi servent les arbres, quelle est leur structure complexe et que peut on en faire ?</p>
+                                </div>
+
+                        </div>
+                        <div class="text-container">
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="leçons/recursivite.html">Récursivité</a></h3>
+                                <p>Pourquoi la récursivité est elle mieux dans certains cas que l'itératif ?</p>
+                                </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="leçons/SQL.html">SQL</a></h3>
+                                <p>Comment faires pour traiter des données dans une BDD ?</p>
+                                </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="leçons/protocole-TCP-IP.html">Protocole TCP/IP</a></h3>
+                                <p>La différence entre ces É protocoles.</p>
+                                </div>
+
+                        </div>
+                        <!--Bouton afficher +-->
+
+                        <button id="toaffich2" onclick="afficheLecons()">Afficher +</button>
+                        <script>
+                            function afficheLecons() {
+                                if(document.getElementById('afficherplus').style.display == "none") {
+                                    document.getElementById('afficherplus').style.display = "block";
+                                    document.getElementById('toaffich2').innerHTML = "Afficher -";
+                                } else {
+                                    document.getElementById('afficherplus').style.display = "none";
+                                    document.getElementById('toaffich2').innerHTML = "Afficher +";
+                                }
+                            }
+                        </script>
+                        <div id="afficherplus" style="display: none">
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="leçons/routage.html">Routage</a></h3>
+                                    <p>A quoi servent les adresses IP, comment faire pour retrouver une adresse IP ?</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="leçons/BASH.html">BASH</a></h3>
+                                    <p>Apprendre les bases de BASH.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="leçons/LINUX.html">LINUX</a></h3>
+                                    <p>Apprendre les bases de LINUX.</p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="leçons/Classes.html">Classes</a></h3>
+                                    <p>C'est quoi les classes?</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="leçons/Booleens.html">Booléens</a></h3>
+                                    <p> True or False ?</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="leçons/Conditionnel.html">Conditionnel</a></h3>
+                                    <p>if , elif, else ?</p>
+                                </div>
+                            
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section>
+                    <div class="container reveal">
+                        <h2 class="mb-1" id="Leçons">Exercices Pratiques</h2>
+                        <div class="text-container">
+
+                            <div class="text-box">
+                            <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/100-ind_min/sujet/">Indice du minimum</a></h3>
+                            <p>Écrire une fonction indice_min qui prend en paramètre un tableau non vide de nombres et qui renvoie l'indice de la première occurrence du minimum de ce tableau.</p>
+                            </div>
+
+                            <div class="text-box">
+                            <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/100-remplacer/sujet/">Remplacer une valeur</a></h3>
+                            <p>Écrire la fonction remplacer prenant en argument : une liste d'entiers valeurs, un entier valeur_cible, un entier nouvelle_valeur et renvoyant une nouvelle liste contenant les mêmes valeurs que valeurs, dans le même ordre, sauf valeur_cible qui a été remplacé par nouvelle_valeur. </p>
+                            </div>
+
+                            <div class="text-box">
+                            <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/110-maximum_nombres/sujet/">Maximum</a></h3>
+                            <p>Écrire une fonction maximum :prenant en paramètre une liste non vide de nombres : nombres, renvoyant le plus grand élément de cette liste.
+                            Chacun des nombres utilisés est de type int ou float.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="text-container">
+
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/115-ind_prem_occ/sujet/">Indice première occurence</a></h3>
+                                <p>Écrire une fonction indice qui prend en paramètres element un nombre entier, tableau un tableau de nombres entiers, et qui renvoie l'indice de la première occurrence de element dans tableau.
+
+                                    La fonction devra renvoyer None si element est absent de tableau.</p>
+                                </div>
+                            
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/116-denivele_positif/sujet/">Dénivelé positif</a></h3>
+                                <p>Écrire une fonction denivele_positif qui prend en argument la liste non vide des altitudes atteintes à la fin de chaque ascension et de chaque descente pendant la course et qui renvoie le dénivelé cumulé positif de cette course.</p>
+                                </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/117-derniere_occurence/sujet/">Dernière occurence</a></h3>
+                                <p>Programmer la fonction derniere_occurrence, prenant en paramètre un tableau non vide d'entiers et un entier cible, et qui renvoie l'indice de la dernière occurrence de cible.
+
+                                    Si l'élément n'est pas présent, la fonction renvoie la longueur du tableau.</p>
+                                </div>
+
+                        </div>
+                        <div class="text-container">
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/118-moyenne/sujet/">Moyenne simple</a></h3>
+                                <p>Écrire une fonction moyenne prenant en paramètre un tableau non vide d'entiers et qui renvoie la moyenne des valeurs du tableau.</p>
+                                </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/119-recherche_indices/sujet/">Recherche d'indices</a></h3>
+                                <p>Écrire une fonction indices qui prend en paramètres un entier element et un tableau d'entiers et qui renvoie la liste croissante des indices de element dans le tableau entiers.
+
+                                    Cette liste sera donc vide [] si element n'apparait pas dans entiers.</p>
+                                </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/120-soleil_couchant/sujet/">Soleil couchant</a></h3>
+                                <p>LÉcrire une fonction nb_batiments_eclaires qui prend en argument la liste hauteurs des bâtiments et qui renvoie le nombre de bâtiments éclairés.</p>
+                                </div>
+
+                        </div>
+
+                        <!-- Bouton afficher plus -->
+                        <button id="toaffich" onclick="affichManipul()">Afficher +</button>
+                        <script>
+                            function affichManipul() {
+                                if(document.getElementById('a_manipuler').style.display == "none") {
+                                    document.getElementById('a_manipuler').style.display = "block";
+                                    document.getElementById('toaffich').innerHTML = "Afficher -";
+                                } else {
+                                    document.getElementById('a_manipuler').style.display = "none";
+                                    document.getElementById('toaffich').innerHTML = "Afficher +";
+                                }
+                            }
+                        </script>
+
+                        <!-- A changer-->
+
+
+                        <div id="a_manipuler" style="display: none">
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/122-premier_minimum/sujet/">Premier minimum local</a></h3>
+                                    <p>Alors qu'elle joue sur un chemin dallé, Élodie laisse rouler une balle. En observant les dalles devant elle, elle se rend compte que certaines dalles sont plus basses que les précédentes, d'autres plus hautes.
+
+                                        Elle se pose la question suivante : "Où va s'arrêter la balle ?"</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/128-nb_puis_double/sujet/">Nombres puis double</a></h3>
+                                    <p>Écrire une fonction nombres_puis_double qui prend en paramètre un tableau de nombres entiers, et qui renvoie la liste (éventuellement vide) des couples d'entiers (a, b) qu'il peut y avoir dans le tableau tel que b suit a et b = 2 * a.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/130-occurrences_du_mini/sujet/">Occurrences du minimum</a></h3>
+                                    <p>Écrire une fonction telle que occurrences_mini(donnees) renvoie un tuple composé de deux parties : la valeur minimale du phénomène étudié ; la liste des indices (rangés par ordre croissant) qui sont associés à la valeur minimale
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/140-multiplication/sujet/">Multiplication sans *</a></h3>
+                                    <p>Programmer la fonction multiplication :
+
+                                        prenant en paramètres deux nombres entiers a et b,
+                                    
+                                        renvoyant le produit de ces deux nombres.
+                                    </p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="">Valeur et indice du max</a></h3>
+                                    <p>Écrire une fonction valeur_et_indice_du_max qui prend en paramètre une liste de nombres entiers valeurs et renvoie un couple donnant le plus grand élément de cette liste, ainsi que l'indice de la <b>première apparition</b> de ce maximum dans la liste.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/210-correspond_mot/sujet/">Mots qui se correspondent</a></h3>
+                                    <p>On dira que mot_complet correspond à mot_a_trous, si on peut remplacer chaque "." de mot_a_trous par une lettre de façon à obtenir mot_complet.
+
+                                        "INFO.MA.IQUE" est un mot à trous,
+                                        "INFORMATIQUE" est un mot qui lui correspond,
+                                        "AUTOMATIQUE" est un mot qui ne lui correspond pas.
+                                        Écrire une fonction telle que correspond(mot_complet, mot_a_trous) renvoie un booléen qui détermine si « mot_complet correspond à mot_a_trous »
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/210-cpt_occurrences/sujet/">Compte occurrences</a></h3>
+                                    <p>Écrire une fonction compte_occurrences qui prend en paramètres cible, un caractère (une chaine de caractères de longueur 1), et mot, une chaine de caractères, et qui renvoie le nombre d'occurrences de cible dans mot ; c'est-à-dire le nombre de fois où cible apparait dans mot.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/210-dentiste/sujet/">Dentiste</a></h3>
+                                    <p>Chez le dentiste, la bouche grande ouverte, lorsqu'on essaie de parler, il ne reste que les voyelles. Même les ponctuations sont supprimées. Vous devez écrire une fonction dentiste qui prend une chaine de caractères texte et qui renvoie une autre chaine ne contenant que les voyelles de texte, placées dans l'ordre. </p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/212-sans_points/sujet/">Avec ou sans points</a></h3>
+                                    <p>Certains services de messagerie ignorent les caractères . dans la partie locale. Ainsi, sur ces services, les messages envoyés aux adresses cours.premiere@e-nsi.fr, co.ur.spremi.ere@e-nsi.fr et cours..premiere@e-nsi.fr arrivent tous au même destinataire courspremiere@e-nsi.fr.
+
+                                        Par contre, les adresses cours_premiere@e-nsi.fr, courspremier@e-nsi.fr et courspremiere@aeif.org ne correspondent pas à ce destinataire.
+                                        
+                                        On cherche dans cet exercice à vérifier qu'une adresse correspond bien à une adresse de référence. L'adresse de référence est l'adresse électronique écrite sans aucun point dans la partie locale.</p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/213-liste_differences/sujet/">Liste des différences</a></h3>
+                                    <p>Écrire une fonction telle que differences(source_1, source_2) renvoie un tableau de la longueur commune à source_1 et source_2 rempli de booléens.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/214-linspace/sujet/">Nombres espacés</a></h3>
+                                    <p>Pour construire la représentation graphique d'une fonction définie sur un intervalle, on calcule les images de plusieurs antécédents régulièrement espacés, ce qui permet de placer des points à relier. Encore faut-il disposer des antécédents. Comment les choisir ?</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/215-exclamations/sujet/">Exclamations</a></h3>
+                                    <p>Dans une phrase !!! écrite !!! certains utilisateurs abusent des points d'exclamations !! Ce pour différentes raisons ! Bref.
+
+                                        Écrire une fonction nb_max_consecutifs qui prend un caractère motif (une chaine de caractères de longueur 1), et une chaine de caractères phrase à analyser. La fonction renvoie le nombre maximal d'occurrences consécutives de motif dans phrase.</p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/216-est_trie/sujet/">Est triée ?</a></h3>
+                                    <p>Programmer la fonction est_trie qui prend en paramètre un tableau de valeurs numériques et qui détermine si ce tableau est trié dans l'ordre croissant. La fonction renvoie un booléen True ou False.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/217-anonymat_1/sujet/">Noircir un texte</a></h3>
+                                    <p>Dans le cadre de cet exercice, nous ne programmons qu'une version simpliste : « noircir » un texte consiste à remplacer toutes les caractères alphabétiques par un caractère occultant, comme par exemple ▮.
+
+                                        Le texte L'espion était J. Bond devient alors ▮'▮▮▮▮▮▮ ▮▮▮▮▮ ▮. ▮▮▮▮.
+                                        
+                                        On demande d'écrire la fonction noircir qui prend en argument une chaîne de caractères texte ainsi que le caractère occultant noir et renvoie le même texte « noirci » du début à la fin.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/218-anonymat_2/sujet/">Caviarder un texte</a></h3>
+                                    <p>On demande d'écrire la fonction caviarder qui prend en argument une chaîne de caractères texte, deux entiers debut et fin et renvoie le même texte caviardé entre les caractères d'indices debut et fin (inclus l'un et l'autre).
+
+                                        On garantit que debut est toujours inférieur ou égal à fin.
+                                        
+                                        Selon l'usage informatique, le premier caractère de texte a pour indice 0. Ainsi le caractère d'indice 1 de "Hello" est "e".</p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/225-gelee/sujet/">Gelées</a></h3>
+                                    <p>Un météorologue a relevé les températures au lever du jour dans sa rue. Il souhaite déterminer la durée de la plus longue période de gelées consécutives durant ces relevés.
+
+                                        Vous devez écrire une fonction gelees(temperatures) qui renvoie la longueur de la plus longue séquence de nombres négatifs ou nuls consécutifs dans la liste.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/226-renverse_chaine/sujet/">Renverser une chaine</a></h3>
+                                    <p>Programmer une fonction renverser :
+
+                                        prenant en paramètre une chaine de caractères mot,
+                                    
+                                        renvoyant une nouvelle chaine de caractères en inversant ceux de la chaine mot.
+                                    </p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/228-join/sujet/">Collage</a></h3>
+                                    <p>Un logiciel de reconnaissance vocale donne la liste des mots d'un candidat hésitant, il y a de nombreux « heu » que l'on souhaite supprimer de son discours.
+
+                                        Écrire une fonction supprimeuh:
+                                        
+                                            qui prend en paramètre mots : une liste de mots qui sont des chaines de caractères (non vides) uniquement composées de lettres minuscules,
+                                            , et qui renvoie le discours sous forme d'une seule chaine de caractères qui ne contient plus les mots "heu" de la liste. Les mots seront séparés par une seule espace. Il n'y aura pas d'espace ni au début, ni à la fin du discours.
+                                        </p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/229-arange/sujet/">Nombres espacés</a></h3>
+                                    <p>Pour construire la représentation graphique d'une fonction définie sur un intervalle de type \([a ; b[\) (\(a\) est inclus, \(b\) est exclu), on calcule les images de plusieurs antécédents régulièrement espacés, ce qui permet de placer des points à relier. Encore faut-il disposer des antécédents. Comment les choisir ?</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/230-delta_encoding/sujet/">Delta encoding</a></h3>
+                                    <p>Le codage par différence (delta encoding en anglais) permet de compresser un tableau de données en indiquant pour chaque donnée, sa différence avec la précédente (plutôt que la donnée elle-même). On se retrouve alors avec un tableau de données assez petites nécessitant moins de place en mémoire. Cette méthode se révèle efficace lorsque les valeurs consécutives sont proches. </p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/238-palindrome/sujet/">Palindrome</a></h3>
+                                    <p>Un palindrome est un mot qui se lit lettre par lettre, de gauche à droite, exactement comme de droite à gauche. Écrire une fonction cree_palindrome qui prend deux paramètres : une chaine de caractères mot et une chaine de caractères qui sera palindrome. La fonction renvoie le palindrome créé en concaténant mot, palindrome, et le renversement de mot.</p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/238-split/sujet/">Découpage de mots</a></h3>
+                                    <p>Pour analyser automatiquement les débats entre des orateurs, on vous demande de créer une fonction decoupe_mots qui renvoie la liste des mots de 4 lettres ou plus dans une chaine de caractères discours passée en paramètre.
+
+                                        On suppose que la chaine discours a été renvoyée par une fonction de reconnaissance vocale qui ignore la ponctuation et ne renvoie que des lettres minuscules sans accent ainsi que des espaces. Le discours se termine aussi par une espace.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/300-anniversaires/sujet/">Anniversaires</a></h3>
+                                    <p>Vous devez écrire une fonction anniversaires(naissances, mois) prenant en arguments le dictionnaire décrit ci-dessus ainsi qu'un numéro d'un mois et renvoyant une liste contenant les prénoms des personnes nées durant ce mois.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/300-dict_extremes/sujet/">Valeurs extrêmes</a></h3>
+                                    <p>Écrire une fonction extremes qui prend en paramètre un tableau valeurs de nombres a priori non triés, et qui renvoie la plus petite ainsi que la plus grande valeur du tableau sous la forme d'un dictionnaire à deux clés 'min' et 'max'.</p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/305-fusion/sujet/">Jointure de dictionnaires</a></h3>
+                                    <p>Le responsable du site vous demande d'associer à chaque adresse email, le pseudo correspondant. Si un abonné n'a pas de pseudo associé, on donnera son adresse email à la place.
+
+                                        Vous devez donc écrire en Python la fonction jointure qui :
+                                        
+                                            prend en argument les deux dictionnaires
+                                            , renvoie le dictionnaire dont les clés sont les adresses email des abonnés et les valeurs leur pseudo (ou leur adresse email s'ils n'ont pas renseigné de pseudo).
+                                        </p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/320-couleurs/sujet/">Des couleurs</a></h3>
+                                    <p>Une couleur en HTML est représentée par une chaine de caractères de sept caractères dont le premier est '#' ; les six autres, groupés 2 par 2 forment 3 entiers en hexadécimal (base 16). Le premier entier est la quantité de rouge ; le deuxième la quantité de vert et le troisième est la quantité de bleu. Ces trois valeurs hexadécimales sont comprises entre "00" et "FF".</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/320-dico_occurrences/sujet/">Dictionnaire d'occurences</a></h3>
+                                    <p>On souhaite stocker les nombres d'occurrences dans un dictionnaire dont les clés sont les caractères de la phrase et les valeurs le nombre d'occurrences du caractère.
+
+                                        Écrire une fonction occurrence_caracteres prenant comme paramètre une chaine de caractères phrase. Cette fonction doit renvoyer un dictionnaire des nombres d'occurrences des caractères présents dans phrase.</p>
+                                </div>
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/320-lsystem/sujet/">Des règles et des lettres</a></h3>
+                                    <p>Vous devez écrire deux fonctions Python :
+
+                                        transformation(motif, regles) prend en argument un motif initial (une chaine de caractères) ainsi qu'un ensemble de règles (un dictionnaire) et renvoie la chaine obtenue après une transformation.
+                                    
+                                        , n_transformations(motif, regles, n) prend en argument un motif initial (une chaine de caractères), un ensemble de règles (un dictionnaire) ainsi qu'un entier n et renvoie le résultat obtenu après n transformations</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/320-scrabble_1/sujet/">Score d'un mot au Scrabble</a></h3>
+                                    <p>Écrire une fonction score_scrabble qui prend en paramètre une chaine de caractères mot et renvoie sa valeur au Scrabble. Le mot ne doit comporter que les lettres de l'alphabet en majuscules et il peut être vide. La valeur des lettres de l'alphabet est donné sous la forme d'un dictionnaire. </p>
+                                </div>
+                                
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/325-bon_enclos/sujet/">Le bon enclos</a></h3>
+                                    <p>Programmer une fonction selection_enclos qui : 
+
+                                        prend en paramètres :
+                                            une liste table_animaux contenant des enregistrements relatifs à des animaux (comme dans l'exemple ci-dessus),
+                                            , un numéro d'enclos num_enclos ;
+                                        renvoie une table contenant les enregistrements de table_animaux dont l'attribut enclos est égal à num_enclos. Dans cette table, les enregistrements seront donnés dans le même ordre que dans la table d'entrée.
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/330-top_like/sujet/">Top-Likes !</a></h3>
+                                    <p>Sur le réseau social TipTop, on s'intéresse au nombre de « like » des abonnés. Les données sont stockées dans un dictionnaire où les clés sont les pseudos et les valeurs correspondantes sont les nombres de « like » comme ci-dessous : ...</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/333-dictionnaire_aime/sujet/">Dictionnaire de « J'aime »</a></h3>
+                                    <p>Vous devez compléter les deux fonctions suivantes :
+
+                                        scores_aimes prend en argument le dictionnaire votes tel que décrit plus haut et renvoie le dictionnaire dont les clés sont les personnes présentes lors de la soirée et les valeurs associées le nombre de « J'aime » qu'ils ont reçus ;
+                                    
+                                        , gagnants prend en argument le dictionnaire votes tel que décrit plus haut et renvoie la liste contenant le nom des vainqueurs du vote (les noms des personnes ayant reçus le plus de « J'aime »).
+                                    </p>
+                                </div>
+                                
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/369-antecedents/sujet/">Dictionnaire des antécédents</a></h3>
+                                    <p>Un dictionnaire associe des valeurs à des clés, comme {"Paris": "P", "Lyon": "L", "Nantes": "N", "Lille": "L"} qui associe "P" à la clé "Paris".
+
+                                        Suivant les cas, une même valeur peut être associée à une ou plusieurs clés. Dans l'exemple précédent, la valeur "L" est associée aux clés "Lyon" et "Lille", on les appelle les antécédents de "L", tandis que "P" a la clé "Paris" pour seul et unique antécédent.</p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/400-aplatir/sujet/">Aplatir</a></h3>
+                                    <p>Écrire la fonction aplatir prenant en argument une liste de listes tableau et renvoyant une liste dans laquelle toutes les valeurs de tableau sont données à la suite les unes des autres.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/400-syracuse/sujet/">La suite de Syracuse</a></h3>
+                                    <p>On admet que, quel que soit l'entier \(n\) choisi au départ, la suite finit toujours par atteindre la valeur \(1\).
+
+                                        Écrire une fonction syracuse prenant en paramètres un entier n strictement positif et qui renvoie la suite de Syracuse de l'entier n.</p>
+                                </div>
+                                
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/410-nb_zeros/sujet/">Nombre de zéros à la fin d'un entier</a></h3>
+                                    <p>On souhaite avoir une fonction nb_zeros qui détermine le nombre de zéros à la fin de l'écriture décimale d'un entier \(n>0\), très grand.</p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/420-rendu_monnaie_3p/sujet/">Rendu de monnaie</a></h3>
+                                    <p>Le but est d'écrire une fonction nommée rendu dont le paramètre est un entier positif somme_a_rendre qui renvoie un tuple de trois entiers qui correspondent aux nombres de billets de 5 euros de pièces de 2 euros et de pièces de 1 euro à rendre afin que le total rendu soit égal à somme_a_rendre, avec le moins de billets et de pièces possible.
+
+                                        On commencera par rendre le nombre maximal de billets de 5 euros, puis celui des pièces de 2 euros et enfin celui des pièces de 1 euro.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/420-tous_differents/sujet/">Tous différents</a></h3>
+                                    <p>Écrire une fonction tous_differents qui prend un tableau tableau et renvoie un booléen indiquant si toutes les valeurs de tableau sont différentes ou non.</p>
+                                </div>
+                                
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/421-code_cesar/sujet/">Chiffre de César⚓︎</a></h3>
+                                    <p>Les autres caractères ('!', '?'...) ne sont pas transformés et sont simplement recopiés tels quels dans le message codé.
+
+                                        Dans cet exercice, nous ne prendrons que des lettres majuscules.
+                                        
+                                        On fournit les deux fonctions :
+                                        
+                                            indice : renvoie l'indice dans l'alphabet d'une lettre majuscule.
+                                            majuscule : renvoie la lettre majuscule d'indice donné.
+                                        </p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/421-moy_ponderee/sujet/">Moyenne pondérée</a></h3>
+                                    <p>Les résultats aux évaluations d'un élève sont regroupés dans une liste non vide composée de couples (note, coefficient). Dans ce couple :
+
+                                        note est un nombre de type flottant (float) compris entre 0.0 et 20.0, 
+                                        coefficient est un nombre de type entier (int) strictement positif
+                                    
+                                    Écrire une fonction moyenne qui renvoie la moyenne pondérée de cette liste donnée en paramètre.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/440-huit_dames_1/sujet/">Huit dames</a></h3>
+                                    <p>On considère dans cet exercice des « échiquiers » de taille \(n \ge 1\) variable. On garantit que l'échiquier est bien carré. Selon la taille de l'échiquier, on pourra placer plus ou moins de dames.
+
+                                        Ces échiquiers seront représentés en machine par des listes de listes contenant :
+                                        
+                                            0 si la case correspondante est vide,
+                                            1 si elle contient une dame.
+                                        </p>
+                                </div>
+                                
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/450-inversions_1/sujet/">Inversions</a></h3>
+                                    <p>On considère dans cet exercice des tableaux d'entiers.
+
+                                        Soit tab un tel tableau. On appelle inversion un couple d'indices distincts i et j tel que :
+                                        
+                                            i est plus petit que j ;
+                                            tab[i] est strictement plus grand que tab[j].
+                                        </p>
+                                </div>
+                            
+                            </div>
+                            <div class="text-container">
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/500-tri_selection/sujet/">Tri par selection</a></h3>
+                                    <p>Écrire une fonction tri_selection qui prend en paramètre un tableau tableau de nombres entiers et qui trie ce tableau en place (c'est-à-dire que le tableau est modifié) par ordre croissant des valeurs.</p>
+                                </div>
+
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/600-fib_1/sujet/">Suite de Fibonacci</a></h3>
+                                    <p>Écrire une fonction telle que fibonacci(n) renvoie le terme d'indice \(n\) de la suite de Fibonacci.</p>
+                                </div>
+                                
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://ens-fr.gitlab.io/nsi-pratique/N1/860-arbre_enracine/sujet/">Hauteur et taille d'un arbre</a></h3>
+                                    <p>On rappelle la définition d'un arbre : il s'agit d'une racine qui possède (souvent une étiquette et) \(0\), \(1\) ou plusieurs sous-arbres qui sont des arbres. Un arbre enraciné qui ne possède pas de sous-arbre est appelé feuille.
+
+                                        On modélise ici des arbres enracinés sans étiquette par des listes Python : la liste des sous-arbres.</p>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container reveal">
+                        <h2 class="mb-1" id="Leçons">Sujets du baccalauréat écrit</h2>
+                        <div class="text-container">
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44686/download">Sujet 1</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44734/download">Sujet 2</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44776/download">Sujet 3</a></h3>
+                            </div>
+
+                        </div>
+                        <div class="text-container">
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44806/download">Sujet 4</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44710/download">Sujet 5</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44638/download">Sujet 6</a></h3>
+                            </div>
+
+                        </div>
+                        <div class="text-container">
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/43694/download">Sujet 7</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/43697/download">Sujet 8</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/43916/download">Sujet 9</a></h3>
+                            </div>
+
+                        </div>
+                        <!--Bouton afficher +-->
+
+                        <button id="toaffich3" onclick="afficheSujet()">Afficher +</button>
+                        <script>
+                            function afficheSujet() {
+                                if(document.getElementById('affichersujet').style.display == "none") {
+                                    document.getElementById('affichersujet').style.display = "block";
+                                    document.getElementById('toaffich3').innerHTML = "Afficher -";
+                                } else {
+                                    document.getElementById('affichersujet').style.display = "none";
+                                    document.getElementById('toaffich3').innerHTML = "Afficher +";
+                                }
+                            }
+                        </script>
+                        <div id="affichersujet" style="display: none">
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44029/download">Sujet 10</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44032/download">Sujet 11</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/45535/download">Sujet 12</a></h3>
+                                </div>
+    
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/45502/download">Sujet 13</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/45112/download">Sujet 14</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/45109/download">Sujet 15</a></h3>
+                                </div>
+    
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44992/download">Sujet 16</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44956/download">Sujet 17</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/32770/download">Sujet 18</a></h3>
+                                </div>
+    
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/33073/download">Sujet 19</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/33076/download">Sujet 20</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/33124/download">Sujet 21</a></h3>
+                                </div>
+    
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/32788/download">Sujet 22</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/32791/download">Sujet 23</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/32914/download">Sujet 24</a></h3>
+                                </div>
+    
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/32917/download">Sujet 25</a></h3>
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_01.pdf">Sujet 26</a></h3>
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_02.pdf">Sujet 27</a></h3>
+                                </div>
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_03.pdf">Sujet 28</a></h3>
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_04.pdf">Sujet 29</a></h3>
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_05.pdf">Sujet 30</a></h3>
+                                </div>
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_06.pdf">Sujet 31</a></h3>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </section>
+                <section>
+                    <div class="container reveal">
+                        <h2 class="mb-1" id="Leçons">Corrigé du baccalauréat écrit (A faire)</h2>
+                        <div class="text-container">
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44686/download">Corrigé 1</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44734/download">Corrigé 2</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44776/download">Corrigé 3</a></h3>
+                            </div>
+
+                        </div>
+                        <div class="text-container">
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44806/download">Corrigé 4</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44710/download">Corrigé 5</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44638/download">Corrigé 6</a></h3>
+                            </div>
+
+                        </div>
+                        <div class="text-container">
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/43694/download">Corrigé 7</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/43697/download">Corrigé 8</a></h3>
+                            </div>
+
+                            <div class="text-box">
+                                <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/43916/download">Corrigé 9</a></h3>
+                            </div>
+
+                        </div>
+                        <!--Bouton afficher +-->
+
+                        <button id="toaffich3" onclick="afficheSujet()">Afficher +</button>
+                        <script>
+                            function afficheSujet() {
+                                if(document.getElementById('affichersujet').style.display == "none") {
+                                    document.getElementById('affichersujet').style.display = "block";
+                                    document.getElementById('toaffich3').innerHTML = "Afficher -";
+                                } else {
+                                    document.getElementById('affichersujet').style.display = "none";
+                                    document.getElementById('toaffich3').innerHTML = "Afficher +";
+                                }
+                            }
+                        </script>
+                        <div id="affichersujet" style="display: none">
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44029/download">Corrigé 10</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44032/download">Corrigé 11</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/45535/download">Corrigé 12</a></h3>
+                                </div>
+    
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/45502/download">Corrigé 13</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/45112/download">Corrigé 14</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/45109/download">Corrigé 15</a></h3>
+                                </div>
+    
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44992/download">Corrigé 16</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/44956/download">Corrigé 17</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/32770/download">Corrigé 18</a></h3>
+                                </div>
+    
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/33073/download">Corrigé 19</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/33076/download">Corrigé 20</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/33124/download">Corrigé 21</a></h3>
+                                </div>
+    
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/32788/download">Corrigé 22</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/32791/download">Corrigé 23</a></h3>
+                                </div>
+    
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/32914/download">Corrigé 24</a></h3>
+                                </div>
+    
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://eduscol.education.fr/document/32917/download">Corrigé 25</a></h3>
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_01.pdf">Corrigé 26</a></h3>
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_02.pdf">Corrigé 27</a></h3>
+                                </div>
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_03.pdf">Corrigé 28</a></h3>
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_04.pdf">Corrigé 29</a></h3>
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_05.pdf">Corrigé 30</a></h3>
+                                </div>
+                            </div>
+                            <div class="text-container">
+                                <div class="text-box">
+                                    <h3 class="LinkCours"><a href="https://pixees.fr/informatiquelycee/term/suj_bac/2023/sujet_06.pdf">Corrigé 31</a></h3>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </section>
+                <!-- The front is based on of my SVG link hover effect https://codepen.io/Zeaklous/pen/kyGqm -->
+                <section>
+                    <div class="container reveal">
+                        <div class="containerCard">
+                            <div class="card">
+            
+                                <div class="front side">
+                                    <h1 class="Carre">Baudrant Luka</h1>
+                                </div>
+            
+                                <div class="back side">
+                                <h3 class="namecard">Baudrant Luka</h3>
+                                    <div>Etudiant L3 Informatique</div>      
+                                        <div class="infocard">
+                                            <p><span class="contenu">Email: </span>baudrantl@gmail.com</p>
+                                            <p><span class="contenu">Instagram: </span>luka_baudrant</p>
+                                            <p><span class="contenu">Téléphone: </span>/</p>
+                                            <p><span class="contenu">Superprof: </span>https://www.superprof.fr/diplome-baccalaureat-general-actuel-etudiant-deuxieme-annee-faculte-informatique-lyon-enseigne-nsi.html</p>
+                                        </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </body>

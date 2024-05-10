@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8"/>
+        <link rel="stylesheet" href="..\css/style3.css"/>
+        <meta name ="Leçons"/>
+        <meta name="keywords" content="Remise à niveau, collège, college, lycée, cours, aide, école, informatique"/>
+        <meta name="description" content="Leçons d'informatiques"/>
+        <title>Leçons - Listes - Informatique</title>
+        <link rel="icon" type="image/gif" href="..\image/livre.png" />
+        <!-- https://www.flaticon.com/fr/icone-gratuite/livre_1245333?term=book&related_id=1245333 -->
+    </head>
+    <body>
+        <a href="https://front.codes/" class="logo" target="_blank">
+            <img src="..\image/Python_logo_01.svg" alt="">
+        </a>
+    
+          <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+          <label for="menu-icon"></label>
+          <nav class="nav"> 		
+            <ul class="pt-5">
+                <li><a href="fonctions.html">Fonctions</a></li>
+                <li><a href="listes.html">Listes</a></li>
+                <li><a href="dictionnaires.html">Dictionnaires</a></li>
+                <li><a href="piles.html">Piles</a></li>
+                <li><a href="files.html">Files</a></li>
+                <li><a href="arbres.html">Arbres</a></li>
+                <li><a href="recursivite.html">Récursivité</a></li>
+                <li><a href="SQL.html">SQL</a></li>
+                <li><a href="protocole-TCP-IP.html">Protocole TCP/IP</a></li>
+                <li><a href="routage.html">Routage</a></li>
+                <li><a href="BASH.html">BASH</a></li>
+                <li><a href="LINUX.html">LINUX</a></li>
+                <li><a href="Classes.html">Classes</a></li>
+                <li><a href="Booleens.html">Booléens</a></li>
+                <li><a href="Conditionnel.html">Conditionnel</a></li>
+                <li><a href="https://www.superprof.fr/diplome-baccalaureat-general-actuel-etudiant-universite-donne-cours-nsi-trouver.html">Cours Particuliers</a></li>
+                <li><a href="..\Acceuil.html">Changer de matière</a></li>
+              </ul>
+            </nav>
+            <h1 class="mb-0">Listes</h1>
+            <div class="Page">
+                <div class="PageGauche">
+                    <h3>Qu'est ce qu'une liste ?</h3>
+                    <p>C'est une <b>structure de données linéaires</b> qui permet de stocker des valeurs (nombres, chaines de caractères, tuples ...etc...). Elles sont facilement manipulables grâce à différentes commandes comme .pop qui permet de supprimer un élément ou .append qui permet d'en ajouter.</p>
+                    <p>On identifie les éléments de la liste par leurs positions qu'on appelle <b>indice</b>. Les indices commence à 0.</p>
+                    <p>Par exemple :</p>
+                    <img src="..\image/ExempleListe.png"/>
+                    <p>Ici le chiffre 6 est positionné à l'indice 0, le nombre 89 lui est positionné à l'indice 1 etc... </p>
+                    <h3>Comment crée t-on une liste ?</h3>
+                    <p>Pour creer une liste, il faut tout simplement faire : <br/> - LeNomDeLaListe = [element1,element2,element3,...etc...] <br/> pour avoir une liste avec les éléments mais on peut aussi faire comme ceci : <br/> - LeNomDeLaListe = [ ] <br/> - LeNomDeLaListe.append(element1) <br/> - LeNomDeLaListe.append(element2) <br/> - LeNomDeLaListe.append(element3) <br/> </p>
+                    <p>Le plus simple restant de creer la liste de la première manière.</p>
+                    <h3>Accéder aux éléments de la liste</h3>
+                    <p>Pour accéder aux éléments de la liste, nous allons utiliser des indices (comme vu précedemment).</p>
+                    <p>Par exemple :</p>
+                    <img src="..\image/ExempleListe.png"/>
+                    <p>Imaginons que sur cet exemple, on est envi de récupérer le chiffre 3. On va procéder étapes par étapes :</p>
+                    <ul>
+                        <li>Pour ce faire on va déjà repérer la position de l'élément (Ici il est à la 4 ème position et à l'indice 3)</li>
+                        <li>Puis on va Récupérer le nom de la liste (Ici, ListeExemple)</li>
+                        <li>On va ensuite taper le nom de la liste et entre crochet l'indice correspondant (Ici, ListeExemple[3])</li>
+                        <li>Et enfin on appuie sur Entrée et le chiffre 3 s'affiche</li>
+                    </ul>
+                    <img src="..\image/ExempleIndice.png"/>
+                    <p>Maintenant comment faire pour accéder à tous les éléments de la liste ?</p>
+                    <p>On va utiliser une boucle for et on va parcourir tous les éléments de la liste. Il y deux manières de récupérer les éléments grâce aux boucles for : <br/> - En parcourant les indices <br/> - En parcourant directement les éléments <br/>Exemple : </p>
+                    <p>Grâce aux indices : </p>
+                    <img src="..\image/ListeBoucle2.png"/>
+                    <p>Une fois la boucle faites il nous reste plus qu'à print à chaque fois :</p>
+                    <img src="..\image/ListeBoucle3.png"/>
+                    <br/>
+                    <p>Grâce aux éléments : </p>
+                    <img  src="..\image/BoucleListe1.png"/>
+                    <p>Une fois la boucle faites il nous reste plus qu'à print à chaque fois : </p>
+                    <img src="..\image/BoucleListe4.png"/>
+                    <h3>Les attributs de la liste</h3>
+                    <p>Comme énoncé précedemment la liste a différents attributs qui permettent de la rendre dynamique.Les plus utilisés sont <b>.pop()</b> qui permet de supprimer par défaut le dernier élément et avec l'indice à l'intérieur il permet de supprimer l'élément à cet indice <b>.pop(indice)</b> et puis le deuxième est <b>.append(nombres)</b> qui permet d'ajouter à la fin d'une liste le nombre : "nombres".  </p>
+                    <p>Pour utiliser les attributs (voir leçon sur les <b><a href="Classes.html" style="text-decoration: none; color:white;">classes</a></b>), on va mettre le nom de la liste avant l'attributs :</p>
+                    <img src="..\image/AttributsListe.png"/>
+                    <h3>En résumé</h3>
+                    <p>Les listes sont des structures de données linéaires très pratique pour stocker des données et elles sont facilement manipulables.</p>
+                    <p>Vous savez maintenant toute la théorie à vous de vous entrainez ! Bonne chance !!!</p>
+                
+                
+                
+                </div>
+                <div class="PartieDroite">
+                    <h3>Exercices à faire pour s'entraîner aux listes</h3>
+                    <h4 style="color : green ; margin-left: 5%; border-bottom: 2px solid #ececee;;">Facile</h4>
+                    <p>Écrire une fonction indices qui prend en paramètres un entier element et un tableau d'entiers et qui renvoie la liste croissante des indices de element dans le tableau entiers.
+                        Cette liste sera donc vide [ ] si element n'apparait pas dans entiers.</p>
+                    <p>&#9888; On n'utilisera ni la méthode index, ni la méthode max.</p>
+                    <img src="..\image/Screenshot 2023-03-02 at 11-32-42 Recherche d'indices - Entrainement Travaux Pratiques en NSI.png"/>
+                    <center><a href="corrige/CorrigeListeFacile.py">Corrige</a></center>
+                    <h4 style="color : orange ; margin-left: 5%; border-bottom: 2px solid #ececee;;">Moyen</h4>
+                    <p>Écrire une fonction maximum :</p>
+                    <ul>
+                        <li>prenant en paramètre une liste non vide de nombres : nombres</li>
+                        <li>renvoyant le plus grand élément de cette liste.</li>
+                    </ul>
+                    <p>Chacun des nombres utilisés est de type int ou float.</p>
+                    <p>&#9888; On interdit ici d'utiliser max, ainsi que sort ou sorted.</p>
+                    <img src="..\image/Screenshot 2023-03-02 at 11-52-42 Maximum - Entrainement Travaux Pratiques en NSI.png"/>
+                    <center><a href="corrige/CorrigeListeMoyen.py">Corrige</a></center>
+                    <h4 style="color : red ; margin-left: 5%; border-bottom: 2px solid #ececee;;">Difficile</h4>
+                    <p>Écrire une fonction indice_min qui prend en paramètre un tableau non vide de nombres et qui renvoie l'indice de la première occurrence du minimum de ce tableau.</p>
+                    <p>&#9888; On n'utilisera pas les fonctions min et index.</p>
+                    <img src="..\image/Screenshot 2023-03-02 at 12-14-39 Indice du minimum - Entrainement Travaux Pratiques en NSI.png"/>
+                    <center><a href="corrige/CorrigeListeDifficile.py">Corrige</a></center>
+                </div>
+            </div>
+    </body>
+</html>
